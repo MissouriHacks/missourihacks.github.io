@@ -104,7 +104,7 @@ nav a:hover {
     nav {
         display:grid;
         column-gap: 20px;
-        gap:5px;
+        gap:20px;
         flex-wrap: nowrap;
     }
     nav img {
