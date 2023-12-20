@@ -1,0 +1,297 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('images/uncraked-font.otf');
+
+* {
+    font-family: Satoshi, Arial;
+    color:white;
+    text-decoration: none;
+    margin:0;
+
+    --gold-color: #FCB500;
+    --content-margin-left: 18vw;
+    --content-margin-right: 18vw;
+}
+
+body {
+    background-image: url("images/grain-background.png");
+    background-color: #222222;
+    overflow-x:hidden;
+    width:100vw;
+}
+
+img {
+    transition-duration: .4s;
+}
+
+h1 {
+    font-size: 24px;
+    color:white;
+    font-weight: 500;
+    text-align: center;
+}
+
+button {
+    background-color: var(--gold-color);
+    border-style: none;
+    color:black;
+    font-weight:700;
+    font-size: 24px;
+    width:160px;
+    padding-top:5px;
+    transition-duration: .4s;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    scale:1.05;
+    transition-duration: .4s;
+}
+
+p {
+    font-size: 14px;
+    text-align: left;
+}
+
+.gold-title {
+    color: var(--gold-color);
+    text-align: left;
+}
+
+/* NAVBAR */
+nav {
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: var(--content-margin-left);
+    margin-right: var(--content-margin-right);
+    justify-content: center;
+    column-gap: 60px;
+    margin-top:20px;
+}
+
+nav img {
+    grid-row-start: 1;
+    height:72px;
+}
+
+nav a {
+    grid-row-start: 1;
+    margin-top:28px;
+    font-size: 12px;
+    font-weight:500;
+    height:16px;
+    transition-duration: .4s;
+}
+
+nav a:hover {
+    color: var(--gold-color);
+    scale:1.05;
+    transition-duration: .4s;
+    cursor:pointer;
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+    nav img { /* HIDE THE MIDDLE IMAGE */
+        display:none;
+    }
+}
+@media (max-width: 600px) {
+    nav {
+        display:grid;
+        column-gap: 20px;
+        gap:5px;
+        flex-wrap: nowrap;
+    }
+    nav img {
+        display:none;
+    }
+}
+
+/* BACKGROUND GEARS */
+
+@keyframes rotate-gears { 
+    0%   {rotate:0deg;}
+    25%  {rotate:90deg;}
+    50%  {rotate:180deg;}
+    100% {rotate:270deg;}
+}
+
+@keyframes rotate-gears-reverse {
+    0%   {rotate:270deg;}
+    25%  {rotate:180deg;}
+    50%  {rotate:90deg;}
+    100% {rotate:0deg;}
+}
+
+.gears {
+    width:100%;
+    justify-content: center;
+    position:absolute;
+    margin-top:60px;
+    display:flex;
+    gap:20px;
+    z-index: -1;
+}
+.big-gear {
+    margin-top:30px;
+    height:60vw;
+    max-height: 600px;
+    animation-name: rotate-gears;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.small-gear {
+    height:200px;
+    animation-name: rotate-gears-reverse;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* FIRST SECTION */
+
+.desc-button {
+    margin-top:20px;
+}
+
+.first-section-title {
+    margin-bottom:20px;
+}
+
+/* DETAILS SECTION */
+
+.details-section {
+    margin-left: var(--content-margin-left);
+    margin-right: var(--content-margin-right);
+}
+
+.missouri-hacks-2024 {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+
+.details-section img {
+    width:400px;
+}
+
+.details-section .missouri-hacks-2024-desc {
+    width:400px;
+}
+
+.details-section img:hover {
+    scale:1.05;
+    transition-duration: .4s;
+}
+
+.section-img:hover {
+    scale: 1.05;
+    transition-duration: .4s;
+}
+
+/* LEADERSHIP */
+
+.leadership-section {
+    margin-left: var(--content-margin-left);
+    margin-right: var(--content-margin-right);
+}
+
+.leadership-section h1 {
+    margin-bottom:20px;
+}
+
+.leadership-grid {
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.leadership-item {
+    width:200px;
+    text-align: center;
+}
+
+.leadership-item p {
+    width: 100%;
+    text-align: center;
+}
+
+.leadership-item img {
+    width:100%;
+}
+
+.leadership-item img:hover {
+    scale:1.05;
+    transition-duration: .4s;
+}
+
+
+/* FAQ SECTION */
+
+.faq-section h1 {
+    margin-bottom:20px;
+}
+
+.faq-question h1 {
+    margin-bottom:0px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.faq-section {
+    margin-left: var(--content-margin-left);
+    margin-right: var(--content-margin-right);
+}
+
+.faq-questions {
+    display:grid;
+    row-gap: 20px;
+}
+
+.faq-link:hover {
+    cursor:pointer;
+}
+
+.faq-desc {
+    display:grid;
+    row-gap: 10px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+/* SCHEDULE GRID */
+
+.schedule-grid {
+    display:grid;
+    justify-content: center;
+    column-gap: 10vw;
+    row-gap: 40px;
+}
+
+.schedule-grid .schedule-row {
+    display:grid;
+    column-gap: 10vw;
+}
+
+.schedule-grid h1 {
+    grid-row-start: 1;
+}
+
+.schedule-desc {
+    text-align: right;
+}
+
+/* FOOTER */
+
+.footer-section {
+    margin-bottom:69px;
+}
+
+.footer-section p{
+    text-align: center;
+}
