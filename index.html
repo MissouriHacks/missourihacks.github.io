@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="icon" type="image/x-icon" href="images/square-logo.png">
     <link rel = "stylesheet" href = "styles.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
         <a href = "schedule.html">SCHEDULE</a>
         <img src = "images/logo.png">
         <a href = "register.html">REGISTER</a>
-        <a href = "">FAQ</a>
+        <a href = "#faq-section">FAQ</a>
     </nav>
 
     <!-- BACKGROUND GEARS -->
@@ -34,7 +34,7 @@
             <div class = "missouri-hacks-2024-desc">
                 <h1 class = "gold-title">MissouriHacks 2024</h1>
                 <p>MissouriHacks will challenge participant's creativity, ingenuity, and coding skills while they create a project centered around energy. From beginners to advanced categories, be prepared to learn, grow, and achieve in this exciting event hosted by SOARE with the University of Missouri for 150 High School students across the state and surrounding regions.<br><br>Registration is free. There will be prizes for first and second place of the beginner and advanced categories, most creative project, along with raffles. We look forward to seeing you there!</p>
-                <button class = "desc-button">REGISTER</button>
+                <button class = "desc-button" onclick="window.location.href = 'register.html'">REGISTER</button>
             </div>
         </div>
     </div>
@@ -139,6 +139,11 @@
                 <p>Hacking Sub-Lead</p>
             </div>
             <div class = "leadership-item">
+                <img src = "images/derek.png">
+                <h3>Derek N.</h3>
+                <p>Hacking Sub-Lead</p>
+            </div>
+            <div class = "leadership-item">
                 <img src = "images/yves.png">
                 <h3>Dr. Yves Chabu</h3>
                 <p>Advisor - chabuc@missouri.edu</p>
@@ -149,7 +154,7 @@
     <div class = "divider"></div>
 
     <!-- FAQ -->
-    <div class = "faq-section">
+    <div class = "faq-section" id = "faq-section">
         <h1 style="color: var(--gold-color);">Frequently Asked Questions</h1>
         <div class = "faq-questions">
             <div class = "faq-question">
