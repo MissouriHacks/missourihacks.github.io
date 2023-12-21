@@ -291,6 +291,13 @@ nav a:hover {
     text-align: right;
 }
 
+/* GOOGLE FORM */
+iframe {
+    width:100%;
+    margin-right:var(--content-margin-right);
+    justify-content: center;
+}
+
 /* FOOTER */
 
 .footer-section {
