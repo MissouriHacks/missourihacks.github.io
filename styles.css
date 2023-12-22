@@ -217,6 +217,7 @@ nav a:hover {
 
 .leadership-item {
     width:200px;
+    z-index: 1;
     text-align: center;
 }
 
@@ -232,6 +233,14 @@ nav a:hover {
 .leadership-item img:hover {
     scale:1.05;
     transition-duration: .4s;
+}
+
+/* DOTTED MAP */
+
+.dotted-map {
+    z-index: -1;
+    width:70vw;
+    margin-bottom:-36vw;
 }
 
 
