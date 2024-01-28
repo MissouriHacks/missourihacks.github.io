@@ -20,3 +20,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+function Register() {
+  alert("Registration is currently closed. If you have any questions, send them to hacks@missouri.edu.");
+}
